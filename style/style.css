@@ -1,0 +1,298 @@
+:root {
+  --green: #6cc091;
+  --grey: #9a9a9a;
+}
+body {
+  background-color: rgb(232, 224, 224);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans3" sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9.975rem;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+  padding: 0 0.75;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+li {
+  padding: 0 1rem 0 0;
+}
+
+.nav-menu ul li a:hover {
+  color: var(--green);
+}
+
+.nav-menu ul li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--green);
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  margin: 1rem;
+}
+.nav-menu ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  color: white;
+}
+
+.header-section {
+  height: 94vh;
+  background-color: rgba(26, 26, 26, 0.6);
+  background-image: url("../images/photo_2023-09-21_20-59-20.jpg");
+  background-position: 100 80;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+
+.Our-travel-container {
+  color: white;
+  text-align: center;
+}
+.Our-travel-container h1 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  padding: 9rem 0 0 0;
+  margin-bottom: 2.5rem;
+}
+.our-travel-elemensts {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 0 0;
+}
+.element {
+  padding: 4rem;
+  width: 65rem;
+  border-right: 1px solid var(--grey);
+}
+.element h3 {
+  font-weight: 300px;
+  font-size: 1rem;
+  color: white;
+}
+.element {
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: var(--grey);
+}
+.element i {
+  font-size: 3rem;
+  color: var(--green);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button,
+.btn {
+  background: transparent;
+  color: var(--green);
+  padding: 0.4rem 1.8rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: 2px solid var(--green);
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+.button-container button:hover {
+  background-color: rgb(108, 192, 145, 0.1);
+  color: #9a9a9a;
+  cursor: pointer;
+}
+
+.Portfolio-sektion {
+  display: flex;
+  justify-content: center;
+  max-width: 75rem;
+  margin: 0;
+  padding-top: 6rem;
+  margin-left: 8rem;
+  padding-bottom: 6rem;
+}
+
+.Portfolio-sektion article {
+  text-align: center;
+}
+
+.Portfolio-sektion article img {
+  border-radius: 10%;
+  width: 30%;
+}
+.Portfolio-sektion article h3 {
+  font-size: 1.75rem;
+  color: #504e4e;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.Portfolio-sektion article p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #686464;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.footer {
+  padding: 0rem 10rem;
+  text-align: center;
+  background: var(--green);
+}
+footer h3 {
+  padding: 5rem 0 2.5rem 0;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.form {
+  max-width: 75rem;
+  color: white;
+  font-size: 0.9rem;
+}
+.inputs-container {
+  display: flex;
+  justify-content: center;
+}
+.name-container,
+.email-container,
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+.name-container {
+  margin-right: 2.25rem;
+}
+
+.inputs-container {
+  margin-bottom: 2rem;
+}
+input,
+textarea {
+  background-color: transparent;
+  border: 2px solid #8dcca9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #256843;
+}
+.textarea-container label {
+  margin: 1rem;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #bae5ce;
+}
+.btn-submit {
+  color: white;
+  background-color: var(--green);
+  border: 2px solid white;
+  margin: 1.7rem 0 6rem 0;
+}
+
+.btn-submit:hover {
+  color: white;
+  background-color: #aacdba;
+}
+
+.fa-bars {
+  display: none;
+}
+.nav-menu.visible {
+  right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-section {
+    height: 100%;
+  }
+  .our-travel-elemensts {
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0 2rem 0;
+  }
+  .element {
+    margin-bottom: 2rem;
+    width: 200px;
+    margin-left: 8rem;
+    padding-bottom: 2rem;
+  }
+  .button-container button {
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
+  .Portfolio-sektion {
+    padding-left: 4rem;
+    flex-direction: column;
+    margin-left: 0rem;
+    width: 400px;
+    padding-bottom: 0.5rem;
+  }
+  .btn {
+    margin-bottom: 0.8rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+  }
+  .nav-menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(135, 157, 135, 0.444);
+  }
+  .fa-bars {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    color: var(--green);
+    font-size: 1.5rem;
+  }
+}
