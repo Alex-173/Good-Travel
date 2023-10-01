@@ -241,9 +241,12 @@ textarea::placeholder {
   .header-section {
     height: 100%;
     background-image: url("../images/photo_2023-09-21_20-59-20.jpg");
-    background-size: cover;
     background-blend-mode: darken;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-size: 100vw;
   }
   .our-travel-elemensts {
     flex-direction: column;
@@ -298,5 +301,9 @@ textarea::placeholder {
     right: 1rem;
     color: var(--green);
     font-size: 1.5rem;
+  }
+  body {
+    background-color: rgb(232, 224, 224);
+    width: 100%;
   }
 }
