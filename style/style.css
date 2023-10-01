@@ -240,6 +240,10 @@ textarea::placeholder {
 @media only screen and (max-width: 600px) {
   .header-section {
     height: 100%;
+    background-image: url("../images/photo_2023-09-21_20-59-20.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
   }
   .our-travel-elemensts {
     flex-direction: column;
